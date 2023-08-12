@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css"/>
+    <link rel="stylesheet" href="liste.css"/>
+
+
+   <body>
+  <!-- Nav START -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SERV-MARKT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav end -->
+    <section class="pb-0 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center fw-bold ">
+            <h1 class="tit">إضافة قائمة جديدة  </h1>
+            <p class="mb-0">تأثيرات الإشادة تتمنى تغيير الطريقة وأي تغيير مرغوب فيه. الاستخدام النشط نظرًا لأنه نظر إلى الوراء</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container mt-2">
+    <!-- Card body START -->
+    <div class="card-body bg-light">
+      <h2>اختر فئة القائمة </h2>
+
+      <div class="row g-4">
+        <!-- Choose type -->
+        <div class="col-12">
+          <label class="form-label">*اختر نوع القائمة</label>
+          <select class="form-select js-choice">
+            <option value=""> اختر النوع</option>
+            <option>المنتجات</option>
+            <option>الخدمات</option>
+           
+          </select>
+          <small>المنتجات والخدمات المهنية التي تمتلك عادةً أسلوبًا فريدًا أو موضوعًا يحدد علامتها التجارية وديكورها</small>
+        </div>
+
+        <!-- Listing Name -->
+        <div class="col-12">
+          <label class="form-label"> *اسم القائمة</label>
+          <input class="form-control" type="text" placeholder="أدخل اسم المنتج /الخدمة">
+          <small>إسم المنتج/نوع المنتج</small>
+        </div>
+
+        
+
+        <!-- Short description -->
+        <div class="col-12">
+          <label class="form-label">*وصف قصير</label>
+          <textarea class="form-control" rows="2" placeholder="أدخل الكلمات الرئيسية"></textarea>
+        </div>
+      </div>
+    </div>
+    <!-- Card body END -->
+  </div>
+  <div class="container mt-5 ">
+<!-- Card body START -->
+<div class="card-body bg-light">
+  <h2>موقع القائمة</h2>
+
+  <div class="row g-3">
+   
+
+    <!-- City -->
+    <div class="col-md-6">
+      <label class="form-label"> *المدينة </label>
+      <input class="form-control" type="text" placeholder="أدخل اسم المدينة">
+    </div>
+
+    <!-- Postal number -->
+    <div class="col-md-6">
+      <label class="form-label">Postal number *</label>
+      <input class="form-control" type="text" placeholder="الرمز البريدي">
+    </div>
+
+    <!-- Street -->
+    <div class="col-12">
+      <label class="form-label"> *الشارع </label>
+      <input class="form-control" type="text" placeholder="أدخل اسم الشارع">
+    </div>
+
+    <!-- Latitude -->
+    <div class="col-md-6">
+      <label class="form-label"> *خط العرض</label>
+      <input class="form-control" type="text" placeholder="أدخل خط العرض">
+    </div>
+
+    <!-- Longitude -->
+    <div class="col-md-6">
+      <label class="form-label"> *خط الطول</label>
+      <input class="form-control" type="text" placeholder="ادخل خط الطول">
+    </div>
+
+    <!-- Detailed address -->
+    <div class="col-12">
+      <iframe class="w-100 h-300px grayscale rounded" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d55247.46987356589!2d31.2282952!3d30.066484199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1691640415263!5m2!1sar!2seg" height="500" style="border:0;" aria-hidden="false" tabindex="0"></iframe>	
+    </div>
+  </div>
+</div>
+<!-- Card body END -->
+  </div>
+  <div class="container mt-5 bg-light">
+    <div class="mb-3 bg-">
+<h3>تحميل الصور</h3>
+      <input class="form-control" type="file" id="formFile">
+    </div>
+    <div class="mb-3">
+      <label for="formFileMultiple" class="form-label">مثال لإدخال ملفات متعددة</label>
+      <input class="form-control" type="file" id="formFileMultiple" multiple>
+    </div>
+    <div class="mb-3">
+      <label for="formFileDisabled" class="form-label">مثال لإدخال ملفات معطلة</label>
+      <input class="form-control" type="file" id="formFileDisabled" disabled>
+    </div>
+    <div class="mb-3">
+      <label for="formFileSm" class="form-label">مثال لإدخال ملفات صغيرة</label>
+      <input class="form-control form-control-sm" id="formFileSm" type="file">
+    </div>
+    <div>
+      <label for="formFileLg" class="form-label">مثال لإدخال ملفات كبيرة</label>
+      <input class="form-control form-control-lg" id="formFileLg" type="file">
+    </div>
+    <div class="mb-3">
+      <a href="Detailed .html" class="btn btn-success mt-3">التالى</a>
+    </div>
+  </div>
+  
+   
+  </div>
+<!-- footer start -->
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-muted text-white ">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<!-- footer END -->
+
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+
+
+  </body>
+</html>
